@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Table</title>
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 500px;
+        padding: 50px;
+      }
+
+      td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: center;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dddddd;
+      }
+
+      .container {
+        padding: 50px;
+        text-align: center;
+      }
+
+      .left-align td,
+      th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table class="left-align">
+        <thead>
+          <tr>
+            <th>Games</th>
+            <th>Time</th>
+            <th>Win/lose</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Valorant</td>
+            <td>18</td>
+            <td>50/50</td>
+          </tr>
+
+          <tr>
+            <td>Genship Impact</td>
+            <td>6</td>
+            <td>none</td>
+          </tr>
+
+          <tr>
+            <td>Wuthering Waves</td>
+            <td>4</td>
+            <td>none</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br />
+      <br /><br />
+      <table>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>10</td>
+          <td>11</td>
+          <td>12</td>
+        </tr>
+      </table>
+      <br /><br />
+      <br /><br />
+      <table>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+          <td>8</td>
+        </tr>
+        <tr>
+          <td colspan="3">9</td>
+          <td>10</td>
+        </tr>
+      </table>
+      <br /><br />
+      <br /><br />
+      <table>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>9</td>
+          <td>10</td>
+        </tr>
+      </table>
+      <br /><br />
+      <br /><br />
+      <table>
+        <tr>
+          <td rowspan="3">1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>6</td>
+          <td>7</td>
+        </tr>
+        <tr>
+          <td colspan="3">8</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

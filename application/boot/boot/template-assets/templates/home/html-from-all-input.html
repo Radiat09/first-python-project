@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HTML Form All Inputs</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h2>HTML Contact Form</h2>
+      <form>
+        <label for="firstName">First name</label><br />
+        <input type="text" id="firstName" name="firstName" value="RIDOY" />
+        <br /><br />
+
+        <label for="lastName">Last name</label><br />
+        <input type="text" id="lastName" name="lastName" />
+        <br /><br />
+
+        <label for="email">Email Address</label><br />
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="cv">Upload CV</label><br />
+        <input type="file" id="cv" name="cv" />
+        <br /><br />
+
+        <p>Choose your monster's features:</p>
+        <div>
+          <input type="checkbox" id="Male" name="Male" checked />
+          <label for="Male">Male</label> <br />
+        </div>
+        <div>
+          <input type="checkbox" id="Female" name="Female" />
+          <label for="Female">Female</label> <br />
+        </div>
+        <br /><br />
+
+        <label for="color">Color</label> <br />
+        <input type="color" id="color" name="color" value="#e66465" />
+        <br /><br />
+
+        <label for="startDate">Start date:</label> <br />
+        <input
+          type="date"
+          id="startDate"
+          name="startDate"
+          value="2018-07-22"
+          min="2018-01-01"
+          max="2018-12-31"
+        />
+        <br /><br />
+
+        <label for="meetingTime">Choose a time for your appointment:</label>
+        <br />
+        <input type="datetime-local" id="meetingTime" name="meetingTime
+        value="2018-06-12T19:30" min="2018-06-07T00:00" max="2018-06-14T00:00"
+        />
+        <br /><br />
+
+        <label for="email2">Enter your globex.com email:</label> <br />
+        <input
+          type="email"
+          id="email2"
+          pattern=".+@hmtmcse\.com"
+          size="30"
+          required
+        />
+        <br /><br />
+
+        <input id="id" name="id" type="hidden" value="12" />
+        <br /><br />
+
+        <label for="month-only">Start month:</label> <br />
+        <input
+          type="month"
+          id="month-only"
+          name="start"
+          min="2018-03"
+          value="2018-05"
+        />
+        <br /><br />
+
+        <label for="rejection">Number of rejection (10-100):</label> <br />
+        <input
+          type="number"
+          id="rejection"
+          name="rejection"
+          min="10"
+          max="100"
+        />
+        <br /><br />
+
+        <label for="pass">Password (8 characters minimum):</label> <br />
+        <input
+          type="password"
+          id="pass"
+          name="password"
+          minlength="8"
+          required
+        />
+        <br /><br />
+
+        <input type="radio" id="hueu" name="drone" value="hueu" checked />
+        <label for="hueu">hueu</label> <br />
+        <input type="radio" id="RIDAT" name="drone" value="RIDAT" />
+        <label for="RIDAT">RIDAT</label> <br />
+        <br /><br />
+
+        <label for="volume">Volume</label> <br />
+        <input type="range" id="volume" name="volume" min="0" max="11" />
+        <br /><br />
+
+        <input type="search" id="site-search" name="q" />
+        <button>Search</button>
+        <br /><br />
+
+        <label for="phone">Enter your phone number:</label> <br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+        <br /><br />
+
+        <label for="appt">Choose a time for your meeting:</label> <br />
+        <input
+          type="time"
+          id="appt"
+          name="appt"
+          min="09:00"
+          max="18:00"
+          required
+        />
+        <br /><br />
+
+        <label for="url">Enter an https:// URL:</label> <br />
+        <input
+          type="url"
+          name="url"
+          id="url"
+          placeholder="https://banglafighter.com"
+          pattern="https://.*"
+          size="30"
+          required
+        />
+        <br /><br />
+
+        <label for="camp-week">Choose a week in May or June:</label> <br />
+        <input
+          type="week"
+          name="week"
+          id="camp-week"
+          min="2018-W18"
+          max="2018-W26"
+          required
+        />
+        <br /><br />
+
+        <label for="textarea">Text Area</label> <br />
+        <textarea id="textarea" name="example" rows="4" cols="50">
+            This is a Text Area
+        </textarea>
+        <br /><br />
+
+        <label for="pet-select">Choose a pet:</label><br />
+        <select name="pets" id="pet-select">
+          <option value="">--Please choose an option--</option>
+          <option value="dog">Dogs</option>
+          <option value="cat">Cats</option>
+          <option value="hamsterCombact">Hamster Combact</option>
+          <option value="memeFi">memeFi</option>
+          <option value="pixelverse">pixelverse</option>
+          <option value="seed">seed</option>
+        </select>
+        <br /><br />
+
+        <input type="image" id="image" alt="Login" src="logo.png" />
+        <br /><br />
+
+        <input class="favorite styled" type="button" value="Add to favorites" />
+        <br /><br />
+
+        <input type="reset" value="Reset" />
+        <br /><br />
+
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>
